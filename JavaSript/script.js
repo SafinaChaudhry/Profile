@@ -1,3 +1,5 @@
+let changeThemeBtn = document.getElementById("changetheme-btn");
+
 $(document).ready(function(){
 $('#menu').click(function(){
     $(this).toggleClass('fa-times');
@@ -31,3 +33,17 @@ $('html, body').animate({
 });
 
 });
+
+
+changeThemeBtn.addEventListener("click", function(){
+    var theme = document.getElementsByTagName('link')[0];
+    console.log(theme.getAttribute('href') )
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            if (theme.getAttribute('href') == 'StyleSheet/funky.css') {
+                theme.setAttribute('href', 'StyleSheet/professional.css');
+            } else {
+                theme.setAttribute('href', 'StyleSheet/funky.css');
+            }
+})
