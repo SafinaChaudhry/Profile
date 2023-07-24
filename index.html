@@ -19,7 +19,7 @@
             <div class="user">
                 <img src="Images/profilePicture.jpg" alt="Profile Picture">
                 <h3 class="name">Safina Chaudhry</h3>
-                <p class="post"> Software Developer</p>
+                <p class="post"> Software Developer/ Frontend Developer</p>
             </div>
 
             <nav class="navbar">
@@ -28,7 +28,8 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <li><a id="changetheme-btn">Change Theme</a></li>
                 </ul>
             </nav>
@@ -46,7 +47,7 @@
         development and strengthen my front-end development skills, I am taking a Meta Front End Development course.
         I have a strong passion for building responsive web applications providing the user with a great experience.
     </p>
-        <a href="#about"><button class="btn">About Me<i class="fas fa-user"></button></a> 
+        <a href="#about"><button class="btn">About Me<i class="fas fa-user"></i></button></a> 
     </section>
     <!--Home Section Ends here-->
 
@@ -58,8 +59,11 @@
                 <h3>Name : <Span>Safina Chaudhry</Span></h3>
                 <h3>Qualification : <Span>Masters in Computer Science and Software Systems</Span></h3>
                 <h3>University : <Span>University of Washington</Span></h3>
-                <h3>Who am I : <Span>Software Developer</Span></h3>
-                <a href="#"><button class="btn">Download Resume<i class="fas fa-download"></i></button></a>
+                <h3>Who am I : <Span>Software Developer/ Frontend Developer</Span></h3>
+                <h3>LinkedIn Profile : <Span><a href="https://www.linkedin.com/in/safinachaudhry/" target="_blank">https://www.linkedin.com/in/safinachaudhry/</a></Span></h3>
+                <h3>Github Probile : <Span><a href="https://github.com/SafinaChaudhry?tab=repositories" target="_blank">https://github.com/SafinaChaudhry</a></Span></h3>
+
+                <a href="File/Safina Chaudhry Resume.pdf" download><button class="btn" id="aboutme-btn">Download Resume<i class="fas fa-download"></i></button></a>
 
             </div>
 
@@ -110,7 +114,7 @@
 <i class="fas fa-graduation-cap"></i>
 <span>2020</span>
 <h3> Masters in Computer Science and Software Systems</h3>
-
+http://127.0.0.1:3006/index.html?
 </div>
 
 
@@ -120,6 +124,59 @@
     <h3> Bachelors in Software Engineering</h3>
     
     </div>
+        </div>
+    </section>
+
+    <!--Education section ends here-->
+
+    <!--Projects section starts here-->
+
+    <section class="Projects" id="Projects">
+        <h1 class="heading"> <span>Projects </span> I Created</h1>
+        <div class="box-container">
+            <div class="box">
+                <a  target="_blank" href="https://safinachaudhry.github.io/NationalCafe/"><img  class="image" src="Images/ResturantWebsite.png"></a>
+               <div class="content">
+                <h3>Fast Food Cafe Website</h3>
+                <p>
+                    A responsive Fast Food Cafe Website. Some amazing hover effects have been added to various sections of the websites.
+                    This website was created using HTML, Javascript and some advance CSS. Hover over to see the website in action.  
+                </p>
+            </div>
+            </div>
+
+
+            <div class="box">
+                <a href="https://safinachaudhryprofile.netlify.app/" target="_blank"><img class="image" src="Images/portfolioWebsite.png"></a>
+                <div class="content">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        The porfolio website is created using HTML, CSS and Javacript. The website comprises of diffrent sections icluding profile picture, about me section, 
+                        education and recent work section. Hover over to see the website in action.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="https://newgroceryapp.netlify.app/" target="_blank"><img class="image" src="Images/GroceryApp.png"></a>
+                <div class="content">
+                    <h3>Shopping List App</h3>
+                    <p>
+                        Its an app to make you grocery list. Type in the item and see the items in your list. Once item has been 
+                        purchased simply double click the item to remove from the list. Hover here to try it your self.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="https://gameboardtimerapp.netlify.app/" target="_blank"><img class="image" src="Images/ScoreBoardProject.png"></a>
+                <div class="content">
+                    <h3>Game Score Board Project</h3>
+                    <p>
+                       Its a simple app created using HTML, CSS and Javascipt. 
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -140,15 +197,18 @@
                 </div>
 
             </div>
+        
+            <div>
+                <form id="formId">
+                    <input id="name-txt" type="text" placeholder="Your name" class="box" required/>
+                    <input id="email-txt" type="email" placeholder="Your Email" class="box" required/>
+                    <textarea id="message-txt" cols="30" rows="10" class="message" placeholder="Your Message" required></textarea>
+                    <button id="send-btn" type="submit" class="btn" > Send <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
 
-            <form action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                </textarea><textarea name="" id="" cols="30" rows="10" class="message" placeholder="Message"></textarea>
-                <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i></button>
-
-            </form>
+          
+            
         </div>
 
     </section>
@@ -162,7 +222,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
         <!--Custom js file link-->
-        <script src="JavaSript/script.js"></script>
+        <script src="JavaSript/script.js" type="module"></script>
 
     </body>
 </html>
