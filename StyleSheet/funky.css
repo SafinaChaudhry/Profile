@@ -119,6 +119,8 @@ header .navbar ul li a{
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem ;
+    
+    cursor: pointer;
  }
 
  header .navbar ul li a:hover{
@@ -217,8 +219,18 @@ section{
 }
 
 .about .row .info h3 span{
-    color:#6fd267
+    color:#6fd267;
  
+ }
+ .about .row .info h3 a{
+    color:#6fd267;
+    text-decoration: underline;
+ }
+
+
+ .about .row .info h3 a:visited{
+    color:#6fd267;
+    text-decoration: underline;
  }
 
 .about .row .container{
@@ -246,9 +258,9 @@ section{
 }
 
 .about .row .container .box h3{
-padding-top: 1rem;
+    padding-top: 1rem;
     font-size: 1.5rem;
-  color: #eee;
+    color: #eee;
 }
 
 .education .box-container{
@@ -300,11 +312,70 @@ padding-top: 1rem;
   background:#6fd267
 }
 
+
+.Projects .box-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 40px;
+}
+
+.Projects .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+
+.Projects .box-container .box .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:-110%; left:0;
+}
+
+.Projects .box-container .box .content{
+    text-align: center;
+    background: #222;
+    padding: 50px;
+    height: 300px;
+    }
+   
+
+.Projects .box-container .box img{
+    margin: 1.5px 0;
+    width:"50";
+    height:"50" ;
+}
+
+.Projects .box-container .box .content h3{
+    font-size: 25px;
+    color: #6fd267;
+}
+
+.Projects .box-container .box .content p{
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem 0;
+
+ }
+
+ .Projects .box-container .box:hover .image{
+    top: 0;
+}
+
+
 .contact .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .contact .row .content{
