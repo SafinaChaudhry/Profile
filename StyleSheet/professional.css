@@ -304,6 +304,12 @@ padding-top: 1rem;
     padding-top: 1.5rem;
 }
 
+.education .box-container .box h4{
+    font-size: 1.8rem;
+    color:white;
+    padding-top: 1.5rem;
+}
+
 .education .box-container .box i{
   position: absolute;
   top:-1.5rem;
